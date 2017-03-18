@@ -1,6 +1,5 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
-var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
@@ -19,7 +18,7 @@ var banner = ['/*!\n',
 
 // Compile LESS files from /less into /css
 gulp.task('less', function() {
-    return gulp.src('less/agency.less')
+    return gulp.src('less/new-age.less')
         .pipe(less())
         .pipe(header(banner, { pkg: pkg }))
         .pipe(gulp.dest('css'))
@@ -30,7 +29,7 @@ gulp.task('less', function() {
 
 // Minify compiled CSS
 gulp.task('minify-css', ['less'], function() {
-    return gulp.src('css/agency.css')
+    return gulp.src('css/new-age.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('css'))
@@ -41,7 +40,7 @@ gulp.task('minify-css', ['less'], function() {
 
 // Minify JS
 gulp.task('minify-js', function() {
-    return gulp.src('js/agency.js')
+    return gulp.src('js/new-age.js')
         .pipe(uglify())
         .pipe(header(banner, { pkg: pkg }))
         .pipe(rename({ suffix: '.min' }))
@@ -51,13 +50,17 @@ gulp.task('minify-js', function() {
         }))
 });
 
-// Copy vendor libraries from /node_modules into /vendor
+// Copy lib libraries from /node_modules into /lib
 gulp.task('copy', function() {
     gulp.src(['node_modules/bootstrap/dist/**/*', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map'])
-        .pipe(gulp.dest('vendor/bootstrap'))
+        .pipe(gulp.dest('lib/bootstrap'))
 
     gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
-        .pipe(gulp.dest('vendor/jquery'))
+        .pipe(gulp.dest('lib/jquery'))
+
+    gulp.src(['node_modules/simple-line-icons/*/*'])
+        .pipe(gulp.dest('lib/simple-line-icons'))
+
 
     gulp.src([
             'node_modules/font-awesome/**',
@@ -67,7 +70,7 @@ gulp.task('copy', function() {
             '!node_modules/font-awesome/*.md',
             '!node_modules/font-awesome/*.json'
         ])
-        .pipe(gulp.dest('vendor/font-awesome'))
+        .pipe(gulp.dest('lib/font-awesome'))
 })
 
 // Run everything
@@ -90,16 +93,4 @@ gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() 
     // Reloads the browser whenever HTML or JS files change
     gulp.watch('*.html', browserSync.reload);
     gulp.watch('js/**/*.js', browserSync.reload);
-});
-
-// Compiles SCSS files from /scss into /css
-// NOTE: This theme uses LESS by default. To swtich to SCSS you will need to update this gulpfile by changing the 'less' tasks to run 'sass'!
-gulp.task('sass', function() {
-    return gulp.src('scss/agency.scss')
-        .pipe(sass())
-        .pipe(header(banner, { pkg: pkg }))
-        .pipe(gulp.dest('css'))
-        .pipe(browserSync.reload({
-            stream: true
-        }))
 });
