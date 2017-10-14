@@ -79,6 +79,7 @@ a:focus {
   color: #999999;
   text-decoration: none;
 }
+
 iframe {
   border: none;
   width: 100%;
@@ -505,7 +506,7 @@ p {
 
 /*----------------------------------------- 6) Hero --------------------------------------------------*/
 #home {
-  background: url('../images/hero1.jpeg');
+  background: url('../images/Developer.jpeg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -526,10 +527,10 @@ p {
 .hero-content{
   position: absolute;
   text-align: center;
-  min-width: 300px;
+  min-width: 310px;
   left: 50%;
   top: 50%;
-  padding: 65px;
+  padding: 40px;
   background: rgba(255, 255, 255, 0.8);
   outline: 4px double #FFFFFF;
   outline-offset: 8px;
@@ -912,7 +913,7 @@ ul.portfolio-image li .desc{
   width: 100%;
 }
 .bg-about {
-  background: url('../images/reza.jpg');
+  background: url('../images/profile.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
