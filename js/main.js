@@ -137,14 +137,14 @@
         $(this).removeClass('used');
     });
 
-    //pop up porfolio
-    $('.portfolio-image li a').magnificPopup({
-      type: 'image',
-      gallery: {
-        enabled: true
-      }
-      // other options
-    });
+    // //pop up porfolio
+    // $('.portfolio-image li a').magnificPopup({
+    //   type: 'image',
+    //   gallery: {
+    //     enabled: true
+    //   }
+    //   // other options
+    // });
     
     //Skill
     jQuery('.skillbar').each(function() {
