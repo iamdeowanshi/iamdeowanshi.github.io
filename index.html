@@ -112,8 +112,8 @@
                 <div class="wrap-about">
                   <div class="w-content">
                     <p class="head-about">
-                      Experienced Software Engineer with extensive practice in Mobile and Full-Stack software engineeringing. Master’s Student
-                      at San Jose State University in Software Engg. Loooking for Summer Internship.
+                      Experienced Software Engineer with extensive practice in Mobile and Full-Stack software development. Master’s Student at
+                      San Jose State University in Software Engg. Loooking for Summer Internship.
                     </p>
 
                     <h5 class="name">
@@ -175,16 +175,15 @@
                 <span>Work</span>
               </h3>
               <p class="content-detail">
-                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                <br><br>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
-                dolore eu feugiat nulla facilisis at vero eros.
+                Worked on different web and mobile projects with exposure to Iot devices like RasberryPi.<br><br> Currently
+                working on iOs, data mining and spring projects.
               </p>
             </div>
             <div class="col-md-9 content-right">
               <!--PORTFOLIO IMAGE-->
               <ul class="portfolio-image">
                 <li class="col-md-6">
-                  <a href="#modal-01"><img alt="image" src="images/rasbeery.png">
+                  <a data-target="#modal-01" data-toggle="modal" href="#modal-01"><img alt="image" src="images/rasbeery.png">
                     <div class="decription-wrap">
                       <div class="image-bg">
                         <p class="desc">RasberryPi Deployer</p>
@@ -194,7 +193,7 @@
                   </a>
                 </li>
                 <li class="col-md-6">
-                  <a href="#modal-01"><img alt="image" src="images/Spartan-deal.png">
+                  <a href="#modal-02" data-target="#modal-02" data-toggle="modal"><img alt="image" src="images/Spartan-deal.png">
                     <div class="decription-wrap">
                       <div class="image-bg">
                         <p class="desc">
@@ -205,7 +204,7 @@
                   </a>
                 </li>
                 <li class="col-md-6">
-                  <a href="#modal-01"><img alt="image" src="images/sentiment.jpg">
+                  <a href="#modal-03" data-target="#modal-03" data-toggle="modal"><img alt="image" src="images/sentiment.jpg">
                     <div class="decription-wrap">
                       <div class="image-bg">
                         <p class="desc">
@@ -216,7 +215,7 @@
                   </a>
                 </li>
                 <li class="col-md-6">
-                  <a href="#modal-01"><img alt="image" src="images/yelp.jpg">
+                  <a href="#modal-04" data-target="#modal-04" data-toggle="modal"><img alt="image" src="images/yelp.jpg">
                     <div class="decription-wrap">
                       <div class="image-bg">
                         <p class="desc">
@@ -227,7 +226,7 @@
                   </a>
                 </li>
                 <li class="col-md-6">
-                  <a href="#modal-01"><img alt="image" src="images/chat.jpg">
+                  <a href="#modal-05" data-target="#modal-05" data-toggle="modal"><img alt="image" src="images/chat.jpg">
                     <div class="decription-wrap">
                       <div class="image-bg">
                         <p class="desc">
@@ -238,7 +237,7 @@
                   </a>
                 </li>
                 <li class="col-md-6">
-                  <a href="#modal-01"><img alt="image" src="images/travel.jpg">
+                  <a href="#modal-06" data-target="#modal-06" data-toggle="modal"><img alt="image" src="images/travel.jpg">
                     <div class="decription-wrap">
                       <div class="image-bg">
                         <p class="desc">
@@ -251,145 +250,128 @@
               </ul>
               <!--/.PORTFOLIO IMAGE END-->
               <!-- pop up modal-->
-              <div id="modal-01" class="modal fade slider mfp-hide">
-
-                <div class="media">
-                  <img src="images/rasbeery.png" alt="" />
+              <div class="modal fade" id="modal-01" role="dialog" style="margin-top:20px">
+                <div class="popup-modal">
+                  <div class="media">
+                    <img src="images/rasbeery.png" alt="" />
+                  </div>
+                  <div class="description-box">
+                    <h4>RasberryPi Python App Deployer</h4>
+                    <p>- Uses RabbitMQ for making RPC calls with the server deployed on GCE cloud.<br/>- Webhook integration
+                      with GitHub for callback and real-time updating of information.<br/>- UI using bootstrap, html and
+                      jquery </p>
+                    <div class="categories">Web Application</div>
+                  </div>
+                  <div class="link-box">
+                    <a href="https://github.com/iamdeowanshi/Raspberry-Pi-App-deployer" target="_blank">GitHub</a>
+                    <a href="#" class="popup-modal-dismiss">Close</a>
+                  </div>
                 </div>
-
-                <div class="description-box">
-                  <h4>Isometric Web Application</h4>
-                  <p>• Created a web application and a website using HTML, CSS, JavaScript, JQuery on front end and Spring Boot
-                    Framework and MongoDB with RESTful API on the backend.<br/> • Implemented functionalities like real time
-                    posting and bidding for items along with google single sign-on, search, security, compression and other
-                    minor required features.<br/> • Received A on the project. </p>
-
-                  <div class="categories">Web Application</div>
-                </div>
-
-                <div class="link-box">
-                  <a href="https://github.com/ChintanVachhani?utf8=%E2%9C%93&tab=repositories&q=isometric&type=&language=" target="_blank">Details</a>
-                  <a href="#" class="popup-modal-dismiss">Close</a>
-                </div>
-
               </div>
               <!-- /modal-01 -->
+              <div class="modal fade" id="modal-02" role="dialog" style="margin-top:20px">
+                <div class="popup-modal">
+                  <div class="media">
+                    <img src="images/Spartan-deal.png" alt="" />
+                  </div>
+
+                  <div class="description-box">
+                    <h4>Spartan Deal</h4>
+                    <p> Spartan-Deals is an e-commerce web application similar to Amazon developed with features like easy check-out
+                      of products from multiple vendors, Wishlist, search products based on multiple facotrs, PayPal integration,
+                      Facebook and Google login integration and product sorting and filtering. The application is implemented
+                      based on CURL calls to access remote company's databases to list the products from multiple companies
+                      in the market place. </p>
+                    <div class="categories">Web Application</div>
+                  </div>
+                  <div class="link-box">
+                    <a href="https://github.com/iamdeowanshi/SpartanDeals" target="_blank">GitHub</a>
+                    <a href="#" class="popup-modal-dismiss">Close</a>
+                  </div>
+                </div>
+              </div>
+              <!-- /modal-02 -->
+              <div class="modal fade" id="modal-03" role="dialog" style="margin-top:20px">
+                <div class="popup-modal">
+                  <div class="media">
+                    <img src="images/sentiment.jpg" alt="" />
+                  </div>
+                  <div class="description-box">
+                    <h4>Movie Review Sentiment Analysis</h4>
+                    <p>• Developed Knn classifier for sentiment analysis of movie reviews.<br/> • Achieved accuracy of 85.94%
+                      with first rank on CLP.<br/> • Developed using jupyter notebook in python. </p>
+                    <div class="categories">Jupyter Notebook</div>
+                  </div>
+                  <div class="link-box">
+                    <a href="https://github.com/iamdeowanshi/Movie-Reviews-Sentiment" target="_blank">GitHub</a>
+                    <a href="#" class="popup-modal-dismiss">Close</a>
+                  </div>
+                </div>
+              </div>
+              <!-- /modal-03 -->
+              <div class="modal fade" id="modal-04" role="dialog" style="margin-top:20px">
+                <div class="popup-modal">
+                  <div class="media">
+                    <img src="images/yelp.jpg" alt="" width="75%" />
+                  </div>
+                  <div class="description-box">
+                    <h4>Yelp Bot</h4>
+                    <p>• Developed Yelp Bot using Aws Lex for bot architecture.<br/> • Aws Lambda for implementing business
+                      logic.
+                      <br/> • Integrated bot service with two big chat service Slack and Facebook. </p>
+                    <div class="categories">Bot Application</div>
+                  </div>
+                  <div class="link-box">
+                    <a href="https://github.com/iamdeowanshi/YelpBot" target="_blank">GitHub</a>
+                    <a href="#" class="popup-modal-dismiss">Close</a>
+                  </div>
+                </div>
+              </div>
+              <!-- /modal-04 -->
+              <div class="modal fade" id="modal-05" role="dialog" style="margin-top:20px">
+                <div class="popup-modal">
+                  <div class="media">
+                    <img src="images/chat.jpg" alt="" width="75%" />
+                  </div>
+                  <div class="description-box">
+                    <h4>Chat Application</h4>
+                    <p>• Chatting Application to find new people based on common interest.<br/> • Implemented using Smack Library
+                      for chat server .<br/> • Developed using Material design in MVP architecture.<br/>• Supports features
+                      like facebook and googlelogin, emojicon, push notification etc </p>
+                    <div class="categories">Android Application</div>
+                  </div>
+                  <div class="link-box">
+                    <a href="https://github.com/iamdeowanshi/ChatApplication" target="_blank">GitHub</a>
+                    <a href="#" class="popup-modal-dismiss">Close</a>
+                  </div>
+                </div>
+              </div>
+              <!-- /modal-05 -->
+              <div class="modal fade" id="modal-06" role="dialog" style="margin-top:20px">
+                <div class="popup-modal">
+                  <div class="media">
+                    <img src="images/travel.jpg" alt="" />
+                  </div>
+                  <div class="description-box">
+                    <h4>Travel Guide</h4>
+                    <p>• Audio-Visual guide for famous places in India.<br/>• Provides detailed information of each place with
+                      images and map.<br/> • Developed using Material design in MVP architecture.<br/> • Supports minimum
+                      android 4.4 version. </p>
+                    <div class="categories">Android Application</div>
+                  </div>
+                  <div class="link-box">
+                    <a href="https://github.com/iamdeowanshi/travelGuide" target="_blank">GitHub</a>
+                    <a href="#" class="popup-modal-dismiss">Close</a>
+                  </div>
+                </div>
+              </div>
+              <!-- /modal-06 -->
               <!-- pop up modal-->
             </div>
           </div>
         </div>
       </section>
       <!--/.WORK END-->
-
-      <!--SERVICES-->
-      <section class="white-bg" id="services">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-              <h3 class="title-small">
-                <span>Services</span>
-              </h3>
-              <p class="content-detail">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat.
-              </p>
-            </div>
-            <div class="col-md-9 content-right">
-              <div class="row">
-                <ul class="listing-item">
-                  <li>
-                    <div class="col-md-4 col-sm-4">
-                      <h3 class="icon-use">
-                        c
-                      </h3>
-                      <p class="head-sm">
-                        MARKETING
-                      </p>
-                      <p class="text-grey">
-                        Typi non habent claritatem insitam est usus legentis in iis qui facit eorum claritatem.
-                      </p>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="col-md-4 col-sm-4">
-                      <h3 class="icon-use">
-                        b
-                      </h3>
-                      <p class="head-sm">
-                        WEB DESIGN
-                      </p>
-                      <p class="text-grey">
-                        Typi non habent claritatem insitam est usus legentis in iis qui facit eorum claritatem.
-                      </p>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="col-md-4 col-sm-4">
-                      <h3 class="icon-use">
-                        d
-                      </h3>
-                      <p class="head-sm">
-                        UI
-                      </p>
-                      <p class="text-grey">
-                        Typi non habent claritatem insitam est usus legentis in iis qui facit eorum claritatem.
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-
-                <ul class="listing-item">
-                  <li>
-                    <div class="col-md-4 col-sm-4">
-                      <p class="icon-use">
-                        f
-                      </p>
-                      <p class="head-sm">
-                        DIRECTOR
-                      </p>
-                      <p class="text-grey">
-                        Typi non habent claritatem insitam est usus legentis in iis qui facit eorum claritatem.
-                      </p>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="col-md-4 col-sm-4">
-                      <h3 class="icon-use">
-                        p
-                      </h3>
-                      <p class="head-sm">
-                        UX DESIGN
-                      </p>
-                      <p class="text-grey">
-                        Typi non habent claritatem insitam est usus legentis in iis qui facit eorum claritatem.
-                      </p>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="col-md-4 col-sm-4">
-                      <h3 class="icon-use">
-                        m
-                      </h3>
-                      <p class="head-sm">
-                        FRONT END
-                      </p>
-                      <p class="text-grey">
-                        Typi non habent claritatem insitam est usus legentis in iis qui facit eorum claritatem.
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--/.SERVICES END-->
 
       <!--EMPLOYEMENT-->
       <section class="grey-bg" id="employement">
@@ -400,8 +382,7 @@
                 <span>Employement</span>
               </h3>
               <p class="content-detail">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat.
+                Experience of more than a year on Android development in Agile environment.
               </p>
             </div>
             <div class="col-md-9 content-right">
@@ -412,99 +393,19 @@
                       <div class="wrap-card">
                         <div class="card">
                           <h2 class="year">
-                            2007 - 2009
+                            20015 - 2016
                           </h2>
                           <p class="job">
-                            web designer
+                            Android Developer
                           </p>
                           <p class="company">
-                            Corp Project
+                            Tecsol Software
                           </p>
                           <hr>
                           <div class="text-detail">
                             <p>
-                              Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica,
-                              quam nunc putamus parum claram, anteposuerit litterarum formas humanita per seacula quarta
-                              decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="col-md-6 col-sm-6">
-                      <div class="wrap-card">
-                        <div class="card">
-                          <h2 class="year">
-                            2009 - 2010
-                          </h2>
-                          <p class="job">
-                            web designer
-                          </p>
-                          <p class="company">
-                            Google inc
-                          </p>
-                          <hr>
-                          <div class="text-detail">
-                            <p>
-                              Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica,
-                              quam nunc putamus parum claram, anteposuerit litterarum formas humanita per seacula quarta
-                              decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <ul class="listing-item">
-                  <li>
-                    <div class="col-md-6 col-sm-6">
-                      <div class="wrap-card">
-                        <div class="card">
-                          <h2 class="year">
-                            2010 - 2014
-                          </h2>
-                          <p class="job">
-                            crative director
-                          </p>
-                          <p class="company">
-                            41 studio
-                          </p>
-                          <hr>
-                          <div class="text-detail">
-                            <p>
-                              Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica,
-                              quam nunc putamus parum claram, anteposuerit litterarum formas humanita per seacula quarta
-                              decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="col-md-6 col-sm-6">
-                      <div class="wrap-card">
-                        <div class="card">
-                          <h2 class="year">
-                            2014 - NOW
-                          </h2>
-                          <p class="job">
-                            fullstack designer
-                          </p>
-                          <p class="company">
-                            Freelance
-                          </p>
-                          <hr>
-                          <div class="text-detail">
-                            <p>
-                              Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica,
-                              quam nunc putamus parum claram, anteposuerit litterarum formas humanita per seacula quarta
-                              decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes.
+                              Worked in agiler environment to deliver more than 5 android application. Use of material design and MVP architecture, which
+                              included latest library like Dagger2, retrofit 2, realm. Mentored trainee's .
                             </p>
                           </div>
                         </div>
@@ -529,8 +430,8 @@
                 <span>Skills</span>
               </h3>
               <p class="content-detail">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat.
+                Other Technologies worked on:<br/> • Aws <br/> • Docker <br/> • Elk <br/> • Git <br/> • Json <br/> • Rest
+                <br/>• Maven <br/>• RasberryPi <br/>• Realm <br/>• MongoDb <br/>
               </p>
             </div>
             <div class="col-md-9 content-right">
@@ -546,15 +447,15 @@
                 </div>
                 <div class="skillbar" data-percent="91%">
                   <div class="title head-sm">
-                    CSS 4
+                    JAVA
                   </div>
                   <div class="count-bar">
                     <div class="count"></div>
                   </div>
                 </div>
-                <div class="skillbar" data-percent="58%">
+                <div class="skillbar" data-percent="80%">
                   <div class="title head-sm">
-                    jQuery
+                    Python
                   </div>
                   <div class="count-bar">
                     <div class="count"></div>
@@ -570,7 +471,39 @@
                 </div>
                 <div class="skillbar" data-percent="95%">
                   <div class="title head-sm">
-                    Photoshop
+                    Android
+                  </div>
+                  <div class="count-bar">
+                    <div class="count"></div>
+                  </div>
+                </div>
+                <div class="skillbar" data-percent="50%">
+                  <div class="title head-sm">
+                    iOS
+                  </div>
+                  <div class="count-bar">
+                    <div class="count"></div>
+                  </div>
+                </div>
+                <div class="skillbar" data-percent="80%">
+                  <div class="title head-sm">
+                    Spring Framework
+                  </div>
+                  <div class="count-bar">
+                    <div class="count"></div>
+                  </div>
+                </div>
+                <div class="skillbar" data-percent="60%">
+                  <div class="title head-sm">
+                    javascript
+                  </div>
+                  <div class="count-bar">
+                    <div class="count"></div>
+                  </div>
+                </div>
+                <div class="skillbar" data-percent="75%">
+                  <div class="title head-sm">
+                    SQL
                   </div>
                   <div class="count-bar">
                     <div class="count"></div>
@@ -593,8 +526,7 @@
                 <span>Education</span>
               </h3>
               <p class="content-detail">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat.
+                Graduate Student from SJSU with 3.8 gpa after end of first semester with specializtion in Enterprise Application development.
               </p>
             </div>
             <div class="col-md-9 content-right">
@@ -605,13 +537,13 @@
                       <div class="wrap-card">
                         <div class="card">
                           <h2 class="year">
-                            2002 - 2005
+                            2017 - 2018(Expected)
                           </h2>
                           <p class="job">
-                            Information System
+                            Software Engineeringing
                           </p>
                           <p class="company">
-                            Telkom University
+                            San Jose State University
                           </p>
                           <hr>
                           <div class="text-detail">
@@ -631,13 +563,13 @@
                       <div class="wrap-card">
                         <div class="card">
                           <h2 class="year">
-                            2005 - 2007
+                            2011 - 2015
                           </h2>
                           <p class="job">
-                            DKV
+                            Computer Science
                           </p>
                           <p class="company">
-                            UNIKOM
+                            Uttar Pradesh Technical University
                           </p>
                           <hr>
                           <div class="text-detail">
@@ -652,247 +584,12 @@
                     </div>
                   </li>
                 </ul>
-                <ul class="listing-item">
-                  <li>
-                    <div class="col-md-6 col-sm-6">
-                      <div class="wrap-card">
-                        <div class="card">
-                          <h2 class="year">
-                            2007 - 2009
-                          </h2>
-                          <p class="job">
-                            Magister DKV
-                          </p>
-                          <p class="company">
-                            ITB
-                          </p>
-                          <hr>
-                          <div class="text-detail">
-                            <p>
-                              Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica,
-                              quam nunc putamus parum claram, anteposuerit litterarum formas humanita per seacula quarta
-                              decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="col-md-6 col-sm-6">
-                      <div class="wrap-card">
-                        <div class="card">
-                          <h2 class="year">
-                            2009 - 2010
-                          </h2>
-                          <p class="job">
-                            Typhography Magister
-                          </p>
-                          <p class="company">
-                            Florida University
-                          </p>
-                          <hr>
-                          <div class="text-detail">
-                            <p>
-                              Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica,
-                              quam nunc putamus parum claram, anteposuerit litterarum formas humanita per seacula quarta
-                              decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-
               </div>
             </div>
           </div>
         </div>
       </section>
       <!--/.EDUCATION END-->
-
-      <!--TESTIMONIAL-->
-      <section id="testimonial">
-        <div class="container">
-          <div class="row wrap-testimonial">
-            <div class="col-md-10 col-md-offset-1">
-              <div class="owl-carousel">
-                <div class="list-testimonial">
-                  <div class="content-testimonial">
-                    <h3 class="testi">
-                      “ Reza did a phenominal job setting up my a website for my product He performed the task very quickly and efficiently. We
-                      know we have the superior topical pain relief cream on the market and he has helped us communicate
-                      that message via the website he built from scratch. Thanks! ”
-                    </h3>
-                    <p class="people">
-                      Darin Cohen - Active10
-                    </p>
-                  </div>
-                </div>
-                <div class="list-testimonial">
-                  <div class="content-testimonial">
-                    <h3 class="testi">
-                      “ Another successful project working with Reza. He has great design skills, is very responsive and professional. Looking
-                      forward to the next opportunity to work together. ”
-                    </h3>
-                    <p class="people">
-                      Marko Milicevic
-                    </p>
-                  </div>
-                </div>
-                <div class="list-testimonial">
-                  <div class="content-testimonial">
-                    <h3 class="testi">
-                      “ Great designer! I like his sense of design, especially the color scheme. Quick turnaround. Look forward to work with him
-                      again. Thanks!! ”
-                    </h3>
-                    <p class="people">
-                      JK Thang
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="mask-testimonial"></div>
-      </section>
-      <!--/.TESTMONIAL END-->
-
-      <!--BLOG-->
-      <section class="grey-bg" id="blog">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="title-small-center text-center">
-                <span>Blog</span>
-              </h3>
-              <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                  <p class="content-details text-center">
-                    Lorem ipsum dolor sit amet consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
-                  </p>
-                </div>
-              </div>
-              <!--GRID BLOG-->
-              <div class="grid">
-                <div class="grid-item">
-                  <div class="wrap-article">
-                    <img alt="blog-1" class="img-circle text-center" src="images/blog-1.png">
-                    <p class="subtitle fancy">
-                      <span>09/01/2015</span>
-                    </p>
-                    <a href="#">
-                      <h3 class="title">
-                        Popular Design in 2015
-                      </h3>
-                    </a>
-                    <p class="content-blog">
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                      aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="grid-item">
-                  <div class="wrap-article">
-                    <img alt="blog-4" class="img-circle text-center" src="images/blog-4.jpg">
-                    <p class="subtitle fancy">
-                      <span>08/20/2015</span>
-                    </p>
-                    <a href="#">
-                      <h3 class="title">
-                        Just Start
-                      </h3>
-                    </a>
-                    <p class="content-blog">
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                      aliquam erat volutpat.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="grid-item">
-                  <div class="wrap-article">
-                    <img alt="blog6" class="img-circle text-center" src="images/blog-6.jpg">
-                    <p class="subtitle fancy">
-                      <span>08/11/2015</span>
-                    </p>
-                    <a href="#">
-                      <h3 class="title">
-                        The Huffington Post
-                      </h3>
-                    </a>
-                    <p class="content-blog">
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                      aliquam erat volutpat.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="grid-item">
-                  <div class="wrap-article">
-                    <img alt="blog2" class="img-circle text-center" src="images/blog-2.jpg">
-                    <p class="subtitle fancy">
-                      <span>08/03/2015</span>
-                    </p>
-                    <a href="#">
-                      <h3 class="title">
-                        Manuk!
-                      </h3>
-                    </a>
-                    <p class="content-blog">
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                      aliquam erat volutpat.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="grid-item">
-                  <div class="wrap-article">
-                    <img alt="blog5" class="img-circle text-center" src="images/blog-5.jpg">
-                    <p class="subtitle fancy">
-                      <span>07/26/2015</span>
-                    </p>
-                    <a href="#">
-                      <h3 class="title">
-                        Do Web Designer Really Need To Know UI/UX Design and Backend Code too?
-                      </h3>
-                    </a>
-                    <p class="content-blog">
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                      aliquam erat volutpat.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="grid-item">
-                  <div class="wrap-article">
-                    <img alt="blog-3" class="img-circle text-center" src="images/blog-3.jpg">
-                    <p class="subtitle fancy">
-                      <span>08/03/2015</span>
-                    </p>
-                    <a href="#">
-                      <h3 class="title">
-                        Somewhere Place
-                      </h3>
-                    </a>
-                    <p class="content-blog">
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-                      suscipit.
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-              <!--/.GRID BLOG END-->
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--/.BLOG END-->
 
       <!--CONTACT-->
       <section id="contact" class="white-bg">
@@ -908,19 +605,24 @@
               </p>
 
             </div>
-            <div class="col-md-9 content-right">
-              <form>
+            <div class="col-md-9 content-right" id="formBlock">
+              <form id="message">
                 <div class="group">
-                  <input required="" type="text"><span class="highlight"></span><span class="bar"></span><label>Name</label>
+                  <input required="" id="name" type="text"><span class="highlight"></span><span class="bar"></span><label>Name</label>
                 </div>
                 <div class="group">
-                  <input required="" type="email"><span class="highlight"></span><span class="bar"></span><label>Email</label>
+                  <input required="" id="email" type="email"><span class="highlight"></span><span class="bar"></span><label>Email</label>
                 </div>
                 <div class="group">
-                  <textarea required=""></textarea><span class="highlight"></span><span class="bar"></span><label>Message</label>
+                  <textarea id="message" required=""></textarea><span class="highlight"></span><span class="bar"></span><label>Message</label>
                 </div>
                 <input id="sendMessage" name="sendMessage" type="submit" value="Send Message">
               </form>
+              <div id="thankyouBlock" style="display:none">
+                <p>
+                  Thank you for filling out the form. I care a lot about it.
+                </p>
+              </div>
             </div>
           </div>
         </div>

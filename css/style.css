@@ -1486,26 +1486,36 @@ ul.portfolio-image li .desc {
 }
 /*----------------------------------------- 8) Popup Modal --------------------------------------------------*/
 
+.modal-dialog {
+display: inline-block;
+text-align: left;
+vertical-align: middle;
+}
+
 .popup-modal {
 	max-width: 550px;
 	background: #FFFFFF;
 	position: relative;
 	margin: 0 auto;
+  padding-top: 20px; 
+  
 }
 .popup-modal .media {
-	position: relative;
+    position:relative;
 }
 .popup-modal img {
-	vertical-align: bottom;
+	vertical-align: middle;
 }
 .popup-modal .description-box {
 	padding: 1.8rem 3.6rem 3rem;
 }
 .popup-modal .description-box h4 {
+  font-weight: bold;
 	font-family: "poppins-bold", sans-serif;
 	font-size: 1.5rem;
 	line-height: 2.4rem;
 	margin-bottom: .6rem;
+  color: black
 }
 .popup-modal .description-box p {
 	font-family: "poppins-regular", sans-serif;
@@ -1526,7 +1536,7 @@ ul.portfolio-image li .desc {
 .popup-modal .link-box {
 	width: 100%;
 	overflow: hidden;
-	background: #000000;
+	background: #636363;
 }
 .popup-modal .link-box a {
 	font-family: "poppins-bold", sans-serif;
@@ -1550,68 +1560,14 @@ ul.portfolio-image li .desc {
 	border-right: 1px solid rgba(200, 200, 200, 0.1);
 }
 .popup-modal .link-box a:hover {
-	background: #cc005f;
+	background: #2f2f2f;
 	border: none;
 }
 @media only screen and (max-width:600px) {
 	.popup-modal {
 		width: auto;
-		margin: 0 20px;
+		margin: 50px 20px;
 	}
-}
-
-/**
- * transition effect for modal popup - (_layout.scss)
- * ------------------------------------------------------------------ 
- */
-
-/* overlay at start */
-.mfp-fade.mfp-bg {
-	opacity: 0;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-
-/* overlay animate in */
-.mfp-fade.mfp-bg.mfp-ready {
-	opacity: .9;
-}
-
-/* overlay animate out */
-.mfp-fade.mfp-bg.mfp-removing {
-	opacity: 0;
-}
-
-/* content at start */
-.mfp-fade.mfp-wrap .mfp-content {
-	opacity: 0;
-	-webkit-transform: translateY(-100%);
-	-ms-transform: translateY(-100%);
-	transform: translateY(-100%);
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-
-/* content animate in */
-.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-	opacity: 1;
-	-webkit-transform: translateY(0);
-	-ms-transform: translateY(0);
-	transform: translateY(0);
-}
-
-/* content animate out */
-.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-	opacity: 0;
-	-webkit-transform: translateY(-100%);
-	-ms-transform: translateY(-100%);
-	transform: translateY(-100%);
 }
 
 /*---------------- a. Skills ----------------*/
