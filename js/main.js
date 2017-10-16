@@ -13,7 +13,7 @@
   });
   $(document).ready(function () {
     var message = "";
-    $('#formBlock').on('click', function (e) {
+    $('#sendMessage').on('click', function (e) {
         //pretend we don't need validation
       message = $("#message").serialize();
       //send to formspree
