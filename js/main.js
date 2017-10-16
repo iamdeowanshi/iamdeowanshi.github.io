@@ -11,30 +11,30 @@
 
     });
   });
-  $(document).ready(function () {
-    var message = "";
-    $('#sendMessage').on('click', function (e) {
-        //pretend we don't need validation
-      message = $("#message").serialize();
-      //send to formspree
-      $.ajax({
-        url: 'http://formspree.io/aadityadeowanshi@hotmail.com',
-        method: "POST",
-        data: {
-          message: message
-        },
-        dataType: "json",
-        success: function () {
-          console.log('success');
-          $('#formBlock').hide();
-          $('#thankyouBlock').show();
-        }
+//   $(document).ready(function () {
+//     var message = "";
+//     $('#sendMessage').on('click', function (e) {
+//         //pretend we don't need validation
+//       message = $("#message").serialize();
+//       //send to formspree
+//       $.ajax({
+//         url: 'http://formspree.io/aadityadeowanshi@hotmail.com',
+//         method: "POST",
+//         data: {
+//           message: message
+//         },
+//         dataType: "json",
+//         success: function () {
+//           console.log('success');
+//           $('#formBlock').hide();
+//           $('#thankyouBlock').show();
+//         }
 
-      });
+//       });
 
-    });
+//     });
 
-  });
+//   });
 
   $(document).ready(function () {
 
